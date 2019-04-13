@@ -1,69 +1,82 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <title>World Card Experts</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
+  <header class="v-header mycontainer">
 
-  <!-- header -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a href="#Home" class="navbar-brand"><img src=".\images\worldcardexperts-logo.png" alt="Devo Logo" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#this-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="this-collapse">
+    <nav class="my-navbar navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"><img src="./images/worldcardexperts-logo.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Media">Media</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- video wrapper -->
+    <div class="video-wrap">
+      <!-- video -->
+      <video autoplay muted loop>
+        <source src="./video/wce-video-medium.mp4" type="video/mp4">
+      </video>
+
     </div>
-  </nav>
 
-  <!-- main area -->
-  <video autoplay muted loop id="bg-video">
-    <source src="devo.mp4" type="video/mp4">
-  </video>
+    <!-- color overlay for video -->
+    <div class="header-overlay">
 
-  <div class="content">
-    <h1>De'vo vom Schattenreich</h1>
-    <p>World Card Expert</p>
-  </div>
+    </div>
 
-  <!-- about us -->
+    <!-- Right-side text video overlay -->
+    <div class="header-content">
+      <h1>De'vo vom Schattenreich</h1>
+      <p>World Card Expert</p>
+      <button type="button" class="btn btn-outline-light">About me</button>
+    </div>
+  </header>
 
-  <!-- our services -->
+  <section class="section">
+    <div class="mycontainer">
+      <h2>New Kickstarter Project!</h2>
+      <a href="https://www.kickstarter.com/projects/1014462851/cardistry-ninjas-remix-playing-cards-limited/" target="_blank"><img src="./images/cardistry-ninjas-remix.jpeg" alt="cardistry-ninjas-remix" class="section-img img-fluid"/></a>
+      <p>This has already funded in just minutes!  Don't miss your opportunity to get your hands on this!  Only available until April 21, 2019!  This is the BOLDEST and most visual deck De'vo has every produced!  This is a REMIX of the extremely popular Cardistry Kiwi Ninjas and Cardistry Wildberry Ninjas. Standard fans produce a Kiwi fan and reverse fans produce a Wildberry colored fan.  With supreme handling abilities and De'vo's Twin Tip Mirror Back principle makes this deck change as you handle it, it's a MUST HAVE for ALL card lovers!</p>
+    </div>
+  </section>
 
-  <!-- business info -->
+  <section class="section section-b">
+    <div class="mycontainer">
+      <h2>Section B</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore
+        ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+    </div>
+  </section>
 
-  <!-- our clients -->
-
-  <!-- footer -->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
